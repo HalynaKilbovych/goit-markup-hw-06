@@ -118,8 +118,10 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link { 
+  
   display: block;
   position: relative;
+  
 }
 
 .current::after { 
@@ -139,7 +141,7 @@ img {
   fill: currentColor;
 }
 .header-contact {
-  color: var(--text-colour);
+  color: #757575 ;
 } 
 .header-link:hover,
 .header-link:focus,
@@ -462,7 +464,11 @@ img {
   column-gap: 10px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
+}
+.form-btn:hover, .modal-form-btn:hover,
+.form-btn:focus, .modal-form-btn:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .btn-icon { 
   fill: currentColor;
@@ -519,6 +525,15 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
+  cursor: pointer;
+
+  
+}
+.modal-close-btn { 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover .modal-close-btn{ 
+  fill: var(--accent-colour);
 }
 .is-hidden { 
   opacity: 0;
@@ -554,9 +569,8 @@ img {
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon {
-  margin-left: 10px;
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -634,11 +648,7 @@ img {
   border-color: var(--accent-colour);
 }
 
-.modal-form-btn:hover,
-.modal-form-btn:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+
 /* --------------------------------------PORTFOLIO----------------------------------------------- */
 .portfolio-filter-list {
   display: flex;
